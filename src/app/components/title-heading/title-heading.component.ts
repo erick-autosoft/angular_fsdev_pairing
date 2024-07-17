@@ -14,6 +14,6 @@ export class TitleHeadingComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.title = 'title';
+
   }
 }

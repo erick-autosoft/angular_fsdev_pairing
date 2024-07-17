@@ -1,39 +1,28 @@
 # Requirements
 
-## Task 1 - Troubleshooting
+## Spike Ticket - Troubleshooting a bug from a junior developer
 
-1. Figure out why the title component is not showing up in app.component.html
+* On the main page of the application there is suppose to be a title that displays "Interview Project Task Listing" but it is not being shown
 
-## Task 2 - Make a component
+## User Story 1 - As a User I would like my first and last name display on the home page with a welcome message.
 
-1. build a component that displays your first and last name on the main level of the application under title component
+* Acceptance Criteria:
+   * User should be able to login with a user name and password
+   * If the user is not logged in the login page should be displayed
+   * password can be basic string matching for testing purposes
 
-## Task 3 - Routing
+## Spike Ticket - The wrong list is being displayed
+* Problem: The task list is still being display on the main screen
+* Desired State: After a user logs in it should display a list of all the available test_descriptions from this api end point - https://my.api.mockaroo.com/test_data.json?key=15fd9a50
 
-1. Build a route that displays the login page first
 
-## Task 4 - Make a Service
+## User Story 2- As a user, I would like to display the top 5 starred repositories from my github account.
 
-1. build a service that authenticates a user with a password
-2. simple auth with hard coded password is ok
-3. return true or false for isAuthenticated
+* Acceptance Criteria:
+  * The user org will always default to microsoft
+  * Display the top 5 repositories sorted by the highest to lowest
+  * There should be a button on the home page that takes me to my repo dashboard
+  * The angular module should be a feature module
+  * Should utilize lazy loading
 
-## Task 5 - Make a guard
 
-1. build a guard that allows access to all components if user is isAuthenticated
-2. if user is not authenticated should redirect back to login page
-
-## Task 6 & 7 - RxJs & Object mutations & Troubleshooting
-
-1. Using rxjs rework getAsycData to return testDescription property in the form of the TestAsyncString model.
-2. add a route to get to async-component
-3. why isn't the data displaying data in the list?
-
-## Task 8 - New Feature - Microsofts favorite repo
-
-1. Build a new feature module
-2. build a serivce to connect to Microsofts github account
-   1. Sort the repo's high to low and return the max repo with the most stars
-3. Add a component to display the favorite repo in H3 tag
-4. implement lazy loading for the route
-5. Make this component the component that displays after the user authenticates
